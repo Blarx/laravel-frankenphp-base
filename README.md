@@ -29,6 +29,8 @@ opcache.jit=tracing
 opcache.jit_buffer_size=100M
 opcache.interned_strings_buffer=16
 opcache.memory_consumption=256
+opcache.validate_timestamps=0
+opcache.save_comments=1
 ```
 
 ### Installed bash
