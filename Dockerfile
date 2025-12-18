@@ -14,7 +14,7 @@ RUN rm -rf /var/cache/apk/* && rm -rf /tmp/*
 # PHP config
 RUN echo "realpath_cache_size=4096K" >> /usr/local/etc/php/conf.d/laravel.ini && \
     echo "realpath_cache_ttl=600" >> /usr/local/etc/php/conf.d/laravel.ini && \
-    echo "memory_limit=512M" >> /usr/local/etc/php/conf.d/laravel.ini && \
+    echo "memory_limit=1024M" >> /usr/local/etc/php/conf.d/laravel.ini && \
     echo "max_execution_time=300" >> /usr/local/etc/php/conf.d/laravel.ini && \
     echo "post_max_size=50M" >> /usr/local/etc/php/conf.d/laravel.ini && \
     echo "upload_max_filesize=50M" >> /usr/local/etc/php/conf.d/laravel.ini && \
