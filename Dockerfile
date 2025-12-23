@@ -1,8 +1,8 @@
 ARG PHP_VERSION=8.4
 FROM dunglas/frankenphp:php${PHP_VERSION}-alpine AS base
 
-# bash for artisan
-RUN apk add --no-cache bash
+# bash for artisan && git for composer fallbacks
+RUN apk add --no-cache bash git
 
 # Install extensions
 RUN install-php-extensions \
