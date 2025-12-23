@@ -9,6 +9,7 @@ Compiled with PHP extensions:
 - zip
 - exif
 - pcntl
+- posix
 - bcmath
 - intl
 
@@ -39,3 +40,7 @@ Bash for laravel artisan commands like:
 ```bash
 docker compose app artisan
 ```
+
+### Installed git
+
+As fallback for composer bad's...

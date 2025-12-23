@@ -6,7 +6,7 @@ RUN apk add --no-cache bash git
 
 # Install extensions
 RUN install-php-extensions \
-    pdo_mysql redis gd zip exif pcntl bcmath intl
+    pdo_mysql redis gd zip exif pcntl posix bcmath intl
 
 # clear cache & temp files
 RUN rm -rf /var/cache/apk/* && rm -rf /tmp/*
